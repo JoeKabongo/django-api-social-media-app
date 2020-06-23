@@ -101,8 +101,12 @@ WSGI_APPLICATION = 'myDjangoApi.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'mydatabase',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'nba_talk_db',
+        'USER': 'postgres',
+        'PASSWORD': 'database',
+        'HOST': 'localhost',
+        'POST': '5432'
     }
 }
 

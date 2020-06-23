@@ -121,8 +121,6 @@ def confirm_user_passcode(request):
 
     
 
-
-    
 @api_view(['PUT', ])
 def reset_password(request):
     """
@@ -207,7 +205,8 @@ def registration_view(request):
         Funtion that register the user using. User is registerd and a token is created for that user
         Users data are sent back to the client
     """
-    data = JSONParser().parse(request)
+    data = request.data
+    print("here")
     serializer = AccountRegistrationSerializer(data=data)
     data = {}
     if serializer.is_valid():
