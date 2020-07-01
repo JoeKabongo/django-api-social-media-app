@@ -5,5 +5,5 @@
 !.elasticbeanstalk/*.global.yml
 
 tester.py
-myDjangoApi/
+myDjangoApi/myDjangoApi/settings.py
 config/
