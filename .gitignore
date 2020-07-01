@@ -4,6 +4,6 @@
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 
-manage.py
+tester.py
 myDjangoApi/settings.py
 config/
