@@ -28,12 +28,6 @@ DEBUG = False
 ALLOWED_HOSTS = ['*', '127.0.0.1']
 
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_USE_TLS = True
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'thenbatalk20@gmail.com'
-EMAIL_HOST_PASSWORD = 'Iamthegoat23'
 
 CORS_ORIGIN_ALLOW_ALL=True
 
@@ -152,3 +146,12 @@ PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
 
 AUTH_USER_MODEL = 'Account.UserAccount'
+
+
+# EMAIL SETTINGS
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = os.environ['email']
+EMAIL_HOST_PASSWORD = os.environ['password']
