@@ -97,6 +97,9 @@ def request_password_update(request):
 
 @api_view(['POST'])
 def confirm_user_passcode(request):
+    """
+        Confirming the user enter correct passcode to recover their emails
+    """
     try:
         user_email = request.data['userEmail']
         passcode = request.data['passcode']
@@ -151,7 +154,6 @@ def reset_password(request):
     }
 
     return Response(data=data, status=status.HTTP_200_OK)
-
 
 
 
@@ -268,7 +270,6 @@ def login_view(request):
 
 
 
- 
 
 @api_view(['PUT', ])
 @authentication_classes([TokenAuthentication])

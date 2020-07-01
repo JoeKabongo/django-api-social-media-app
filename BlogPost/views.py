@@ -18,12 +18,12 @@ from Post.models import Post
 from .models import BlogArticle
 from .serializers import BlogSerializer, BlogRegistrationSerializer
 import json
-
+from config.cloudinary import cloud_name, api_key, api_secret
 
 cloudinary.config( 
-  cloud_name = "dgknrkenk", 
-  api_key = "411367951248332", 
-  api_secret = "h-MTk1vxtX8dkd3UQG1L6NQ5MlI" 
+  cloud_name = cloud_name, 
+  api_key = api_key, 
+  api_secret = api_secret 
 )
 
 @api_view(['POST',])
