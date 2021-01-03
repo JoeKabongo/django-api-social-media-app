@@ -10,3 +10,4 @@ class Post(models.Model):
     content = models.CharField(max_length=1000)
     likes = models.IntegerField(default=0)
     dislikes = models.IntegerField(default=0)
+    

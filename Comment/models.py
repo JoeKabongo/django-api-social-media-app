@@ -25,7 +25,6 @@ class Reply(models.Model):
     likes = models.IntegerField(default=0)
     dislikes = models.IntegerField(default=0)
 
-
 class Reaction(models.Model):
     user = models.ForeignKey(UserAccount, null=True, on_delete=models.SET_NULL, related_name="user_like")
     article = models.ForeignKey(BlogArticle, null=True, on_delete=models.CASCADE, related_name="article")
