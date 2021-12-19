@@ -4,4 +4,4 @@
 
 Check out the frontend here: https://github.com/JoeKabongo/NBA-talk-frontend
 
-Database design: https://app.diagrams.net/#G1y__ma7fhIWj71EDweqKAsA03Nvgftm-T
+Database design: https://drive.google.com/file/d/1y__ma7fhIWj71EDweqKAsA03Nvgftm-T/view?usp=sharing
